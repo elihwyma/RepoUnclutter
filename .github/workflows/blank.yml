@@ -1,0 +1,43 @@
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 */24 * * *" # every 24 hours
+    
+name: Repo
+jobs:
+  make:
+    name: Reload the Repo
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          submodules: true
+      - name: Setup Procursus Bootstrap (install)
+        if: steps.procache.outputs.cache-hit != 'true'
+        run: |
+          wget https://apt.procurs.us/bootstrap_darwin-amd64.tar.zst https://apt.procurs.us/Toolchain12_5.tzst
+          rm -r /Applications/Xcode_12.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain
+          sudo gtar -xkf ./Toolchain12_5.tzst -C /Applications/Xcode_12.4.app/Contents/Developer/Toolchains
+          sudo gtar --preserve-permissions -xkf ./bootstrap_darwin-amd64.tar.zst -C /
+          echo '/opt/procursus/sbin:/opt/procursus/bin' >> $GITHUB_PATH
+          PATH=/opt/procursus/sbin:/opt/procursus/bin:$PATH sudo /opt/procursus/bin/apt update
+          sudo /opt/procursus/bin/apt -V dist-upgrade -y || :
+          sudo /opt/procursus/bin/apt -V dist-upgrade -y
+          sudo /opt/procursus/bin/apt install apt-utils -y
+          
+      - name: Add Procursus to PATH
+        run: |
+          echo '/opt/procursus/sbin:/opt/procursus/bin' >> $GITHUB_PATH
+          
+      - name: Regen Repo
+        run: |
+          ./repo.sh
+          
+      - name: Commit To Repo
+        uses: EndBug/add-and-commit@v7.0.0
+        with:
+          message: 'Add Automated Update'
+          signoff: true
