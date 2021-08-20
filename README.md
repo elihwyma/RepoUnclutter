@@ -1,2 +1,2 @@
 # RepoUnclutter
- A proxy of BigBoss with the purpose of removing clutter
+A proxy of cluttered or dead repos that only contains the packages you need
