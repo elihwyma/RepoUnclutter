@@ -35,7 +35,6 @@ jobs:
       - name: Import GPG
         run: |
           echo -n "${{ secrets.GPG_KEY }}" | base64 --decode | gpg --import
-          gpg --list-secret-keys --keyid-format LONG
           
       - name: Regen Repo
         run: |
