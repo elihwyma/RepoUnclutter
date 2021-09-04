@@ -62,6 +62,8 @@ for repo in repoList {
             for (key, value) in package.rawControl {
                 if key == "filename" {
                     string += "filename: \(repoUrl.appendingPathComponent(filename))\n"
+                } else if key == "tag" {
+                    continue
                 } else {
                     string += "\(key): \(value)\n"
                 }
