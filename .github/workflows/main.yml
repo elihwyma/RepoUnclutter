@@ -22,9 +22,9 @@ jobs:
           sudo gtar --preserve-permissions -xkf ./bootstrap-darwin-amd64.tar.zst -C /
           echo '/opt/procursus/sbin:/opt/procursus/bin' >> $GITHUB_PATH
           PATH=/opt/procursus/sbin:/opt/procursus/bin:$PATH sudo /opt/procursus/bin/apt update
-          sudo /opt/procursus/bin/apt -V dist-upgrade -y || :
-          sudo /opt/procursus/bin/apt -V dist-upgrade -y
-          sudo /opt/procursus/bin/apt install apt-utils -y
+          sudo /opt/procursus/bin/apt --allow-downgrades -V dist-upgrade -y || :
+          sudo /opt/procursus/bin/apt --allow-downgrades -V dist-upgrade -y
+          sudo /opt/procursus/bin/apt --allow-downgrades install apt-utils -y
           rm -rf bootstrap_darwin-amd64.tar.zst
           
       - name: Add Procursus to PATH
