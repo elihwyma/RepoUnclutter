@@ -25,7 +25,7 @@ jobs:
           sudo /opt/procursus/bin/apt --allow-downgrades -V dist-upgrade -y || :
           sudo /opt/procursus/bin/apt --allow-downgrades -V dist-upgrade -y
           sudo /opt/procursus/bin/apt --allow-downgrades install apt-utils -y
-          rm -rf bootstrap_darwin-amd64.tar.zst
+          rm -rf bootstrap-darwin-amd64.tar.zst
           
       - name: Add Procursus to PATH
         run: |
