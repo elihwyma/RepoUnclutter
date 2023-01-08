@@ -35,26 +35,34 @@ var packagesToKeep = [Package]()
 for repo in repoList {
     guard let url = repo.packagesURL(arch: "iphoneos-arm"),
           let repoUrl = URL(string: repo.displayURL) else { continue }
-    let tmpUrl = URL(fileURLWithPath: "temppackages.bz2")
+    let tmpUrl = URL(fileURLWithPath: "temppackages\(repo.compression)")
     let packagesUrl = url.appendingPathExtension(repo.compression)
-    
+
     var request = URLRequest(url: packagesUrl)
     request.setValue("Cum", forHTTPHeaderField: "X-Machine")
     request.setValue("Cock", forHTTPHeaderField: "X-Unique-ID")
     request.setValue("Balls", forHTTPHeaderField: "X-Firmware")
     // I cba doing this async
-    guard let packagesData = try? NSURLConnection.sendSynchronousRequest(request, returning: nil) else { fatalError("Unable to connect to \(packagesUrl.absoluteString)")  }
-    do {
-        try packagesData.write(to: tmpUrl, options: .atomic)
-    } catch {
-        fatalError("Unable to write data")
-    }
-    let (error, data) = BZIP.decompress(path: tmpUrl.path)
-    guard let data = data else {
-        fatalError("Unable to unarchive data with error \(error ?? "Unknown")")
+    guard var packagesData = try? NSURLConnection.sendSynchronousRequest(request, returning: nil) else { fatalError("Unable to connect to \(packagesUrl.absoluteString)")  }
+    switch repo.compression {
+    case "": break
+    case "bz2":
+        do {
+            try packagesData.write(to: tmpUrl, options: .atomic)
+        } catch {
+            fatalError("Unable to write data")
+        }
+        let (error, data) = BZIP.decompress(path: tmpUrl.path)
+        guard let data = data else {
+            fatalError("Unable to unarchive data with error \(error ?? "Unknown")")
+        }
+        packagesData = data
+    default:
+        fatalError("Unknown Compression Format")
     }
     
-    let packagesDict = PackageListManager.readPackages(rawPackagesData: data)
+    
+    let packagesDict = PackageListManager.readPackages(rawPackagesData: packagesData)
     for package in packagesDict.values where allowedTweaks.contains(package.packageID) {
         for version in package.allVersions {
             guard let filename = package.filename else { continue }
