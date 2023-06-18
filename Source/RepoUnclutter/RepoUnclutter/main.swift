@@ -32,56 +32,59 @@ for repoData in repoJson {
 var packagesFileData = NSMutableData()
 var packagesToKeep = [Package]()
 
-for repo in repoList {
-    guard let url = repo.packagesURL(arch: "iphoneos-arm"),
-          let repoUrl = URL(string: repo.displayURL) else { continue }
-    let tmpUrl = URL(fileURLWithPath: "temppackages\(repo.compression)")
-    let packagesUrl = url.appendingPathExtension(repo.compression)
+for arch in ["iphoneos-arm", "iphoneos-arm64"] {
+    for repo in repoList {
+        guard let url = repo.packagesURL(arch: arch),
+              let repoUrl = URL(string: repo.displayURL) else { continue }
+        let tmpUrl = URL(fileURLWithPath: "temppackages\(repo.compression)")
+        let packagesUrl = url.appendingPathExtension(repo.compression)
 
-    var request = URLRequest(url: packagesUrl)
-    request.setValue("Cum", forHTTPHeaderField: "X-Machine")
-    request.setValue("Cock", forHTTPHeaderField: "X-Unique-ID")
-    request.setValue("Balls", forHTTPHeaderField: "X-Firmware")
-    // I cba doing this async
-    guard var packagesData = try? NSURLConnection.sendSynchronousRequest(request, returning: nil) else { fatalError("Unable to connect to \(packagesUrl.absoluteString)")  }
-    switch repo.compression {
-    case "": break
-    case "bz2":
-        do {
-            try packagesData.write(to: tmpUrl, options: .atomic)
-        } catch {
-            fatalError("Unable to write data")
-        }
-        let (error, data) = BZIP.decompress(path: tmpUrl.path)
-        guard let data = data else {
-            fatalError("Unable to unarchive data with error \(error ?? "Unknown")")
-        }
-        packagesData = data
-    default:
-        fatalError("Unknown Compression Format")
-    }
-    
-    
-    let packagesDict = PackageListManager.readPackages(rawPackagesData: packagesData)
-    for package in packagesDict.values where allowedTweaks.contains(package.packageID) {
-        for version in package.allVersions {
-            guard let filename = package.filename else { continue }
-            var string = ""
-            for (key, value) in package.rawControl {
-                if key == "filename" {
-                    string += "filename: \(repoUrl.appendingPathComponent(filename))\n"
-                } else if key == "tag" {
-                    continue
-                } else {
-                    string += "\(key): \(value)\n"
-                }
+        var request = URLRequest(url: packagesUrl)
+        request.setValue("Cum", forHTTPHeaderField: "X-Machine")
+        request.setValue("Cock", forHTTPHeaderField: "X-Unique-ID")
+        request.setValue("Balls", forHTTPHeaderField: "X-Firmware")
+        // I cba doing this async
+        guard var packagesData = try? NSURLConnection.sendSynchronousRequest(request, returning: nil) else { fatalError("Unable to connect to \(packagesUrl.absoluteString)")  }
+        switch repo.compression {
+        case "": break
+        case "bz2":
+            do {
+                try packagesData.write(to: tmpUrl, options: .atomic)
+            } catch {
+                fatalError("Unable to write data")
             }
-            string += "\n"
-            guard let data = string.data(using: .utf8) else { fatalError("failed to encode packages file") }
-            packagesFileData.append(data)
+            let (error, data) = BZIP.decompress(path: tmpUrl.path)
+            guard let data = data else {
+                fatalError("Unable to unarchive data with error \(error ?? "Unknown")")
+            }
+            packagesData = data
+        default:
+            fatalError("Unknown Compression Format")
         }
+        
+        
+        let packagesDict = PackageListManager.readPackages(rawPackagesData: packagesData)
+        for package in packagesDict.values where allowedTweaks.contains(package.packageID) {
+            for version in package.allVersions {
+                guard let filename = package.filename else { continue }
+                var string = ""
+                for (key, value) in package.rawControl {
+                    if key == "filename" {
+                        string += "filename: \(repoUrl.appendingPathComponent(filename))\n"
+                    } else if key == "tag" {
+                        continue
+                    } else {
+                        string += "\(key): \(value)\n"
+                    }
+                }
+                string += "\n"
+                guard let data = string.data(using: .utf8) else { fatalError("failed to encode packages file") }
+                packagesFileData.append(data)
+            }
+        }
+        try? FileManager.default.removeItem(at: tmpUrl)
     }
-    try? FileManager.default.removeItem(at: tmpUrl)
+
 }
 
 try? packagesFileData.write(to: URL(fileURLWithPath: "Packages"), atomically: true)
