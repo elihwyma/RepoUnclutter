@@ -1,916 +1,916 @@
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/preferenceloader_2.2.6.deb
-md5sum: 551c39b9d6d58be5ad82e81a59a1715f
-dev: dustinhowett
-sha256: 335fff25ff13021889ba856ce84fbc23ba25569f1c6cc65a3e113b433b1ed60f
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
-version: 2.2.6
-installed-size: 526
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
-maintainer: BigBoss <bigboss@thebigboss.org>
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/ccsupport_1.3.10-2.deb
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportDp
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportDp
+depends: firmware (>= 11.0), mobilesubstrate (>= 0.9.5000)
+md5sum: 02ce766a803095c658a61d4d91be96a4
 architecture: iphoneos-arm
-section: System
-author: Sam Bingner <maintainer@sbdhi.com>
-name: PreferenceLoader
-package: preferenceloader
-depends: mobilesubstrate
-description: load preferences in style
-size: 36414
-
-installed-size: 9121
-package: com.tigisoftware.appdatamanager
-md5sum: eb6c5095ab86800f5e49b8df091f07a2
+maintainer: BigBoss <bigboss@thebigboss.org>
+description: Support tweak for CC modules!
 sponsor: thebigboss.org <http://thebigboss.org>
-maintainer: BigBoss <bigboss@thebigboss.org>
-name: Apps Manager
-author: TIGI Software <satashi2009@gmail.com>
-dev: satashi2009
-icon: file:///Applications/ADManager.app/AppIcon60x60@2x.png
-priority: optional
-version: 1.8.2-5
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=appsmanagerDp
-description: Tool to WIPE, BACKUP, RESTORE AppData for installed Apps
-size: 2518478
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/appsmanager_1.8.2-5.deb
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=appsmanagerDp
-sha256: 4ef336fc36f0b132b237a3ffb832259c729c2a237c42e9b39d8ee46573fddc5c
-depends: firmware (>= 7.0)
-architecture: iphoneos-arm
-section: Utilities
+dev: opa334
+name: CCSupport
+sha256: e7f5b1e2eaad65f3a5592a1c0fcd520a2c8942c671103caa8ef8b6854dbfecdb
+author: opa334 <opa334@protonmail.com>
+package: com.opa334.ccsupport
+version: 1.3.10-2
+section: Tweaks
+replaces: com.ioscreatix.silo
+provides: com.ioscreatix.silo
+installed-size: 381
+conflicts: com.ioscreatix.silo
+size: 59468
 
-depends: mobilesubstrate (>= 0.9.5000), firmware (>= 7.0)
-package: com.muirey03.libmryipc
-installed-size: 464
-version: 2.0.1
-name: libMRYIPC
-dev: muirey03
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libmryipcDp
+section: Development
+sha256: 286b89de309bdae2eb500e66bab4f737233157a78423dfef88b5038b5459de2f
+package: com.cokepokes.libnotifications
+version: 0.3-4
+description: App notification library.
+name: libnotifications
+sponsor: thebigboss.org <http://thebigboss.org>
+installed-size: 910
+dev: cokepokes
+architecture: iphoneos-arm
+author: CokePokes <cokepokes@gmail.com>
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/libnotifications_0.3-4.deb
+md5sum: f3a253c764f41a9756cc1dc6c8eaccbb
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libnotificationsDp
+size: 74786
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libnotificationsDp
 maintainer: BigBoss <bigboss@thebigboss.org>
-sha256: 206b196b2acae7a0ebe7a82d3197e0f1fd358a1f77138d5e0ca130d67f2cd55e
-description: Easy-to-use, RocketBootstrap-less iOS IPC
+depends: firmware (>= 8.0)
+priority: optional
+
+sponsor: thebigboss.org <http://thebigboss.org>
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/karenlocalizer_1.0.5.deb
+size: 4760
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=karenlocalizerDp
+sha256: 374f6baeba9f683d5ec8d334b6b295b960ba90226247e9ff67247c7f035e1ac7
+description: library for developer localization
+section: Development
+version: 1.0.5
+depends: firmware (>= 5.0)
+maintainer: BigBoss <bigboss@thebigboss.org>
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=karenlocalizerDp
+author: Karen/Akemi (angelXwind) <karen@akemi.ai>
+md5sum: 1fd0c56e4eaa45ebbdbd0c93c6f15308
+package: net.angelxwind.karenlocalizer
+name: KarenLocalizer
+dev: angelxwind
+architecture: iphoneos-arm
+installed-size: 231
+
+conflicts: ws.hbang.stopcrashingpls (=1.0)
 section: Development
 size: 28236
 md5sum: 5be4446b36ceeb8f300cefbc10dbcded
+description: Easy-to-use, RocketBootstrap-less iOS IPC
+version: 2.0.1
+depends: mobilesubstrate (>= 0.9.5000), firmware (>= 7.0)
 architecture: iphoneos-arm
 filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/libmryipc_2.0.1.deb
 author: Muirey03 <tommy.muir@btinternet.com>
+name: libMRYIPC
+dev: muirey03
+sha256: 206b196b2acae7a0ebe7a82d3197e0f1fd358a1f77138d5e0ca130d67f2cd55e
+maintainer: BigBoss <bigboss@thebigboss.org>
+package: com.muirey03.libmryipc
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libmryipcDp
 homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libmryipcDp
-conflicts: ws.hbang.stopcrashingpls (=1.0)
+installed-size: 464
 
-depends: firmware (>= 6.0)
-icon: file:///Applications/WiFiPasswords.app/Icon.png
-package: com.malcolmhall.wifipasswords
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/wifipasswords_3.0.1.deb
-author: Malcolm Hall <indiekiduk@gmail.com>
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=wifipasswordsData
-dev: malcolmhall
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=wifipasswordsData
-maintainer: BigBoss <bigboss@thebigboss.org>
-md5sum: c343f3b61169b5ebb122a06911d7d204
-section: Utilities
-name: WiFi Passwords
-description: shows previously entered wifi passwords
-This app displays every WiFi password you have ever entered. Very handy if you forgot a password and need to connect another device, or tell a friend the password for a coffee shop without asking that embarrassing question again. Tap hold on the password to copy it to the clipboard. Requires iOS 3.0 or later.
-size: 851520
-sha256: 912d66b8455232842ce2dcd99ae98aad4cce17ba878cde48ce2e0f45ba545d58
-version: 3.0.1
-architecture: iphoneos-arm
-installed-size: 4112
-
-version: 1.0
-maintainer: BigBoss <bigboss@thebigboss.org>
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/applibraryenabler_1.0.deb
-installed-size: 352
-section: Tweaks
-name: App Library Enabler
-dev: tomaszpoliszuk
-size: 10710
-md5sum: 79e6dbdbdf946df4672832d6a1fbaba8
-architecture: iphoneos-arm
-sponsor: thebigboss.org <http://thebigboss.org>
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=applibraryenablerDp
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=applibraryenablerDp
-author: Tomasz Poliszuk <tomaszpoliszuk+bigboss@gmail.com>
-package: com.tomaszpoliszuk.applibraryenabler
-sha256: 74f74251eee86fa362726f0fc0266648dd6708813aee4e655d96a83e4d4cb677
-conflicts: com.tomaszpoliszuk.applibrarydisabler
-depends: firmware (>= 14.0), mobilesubstrate, preferenceloader, cy+model.ipad
-description: Enable App Library on iPadOS
-
-sha256: 7f009a37a6bcf36fd0b7d41b8f3fd2358e96039eb3cde845ea1375d55d86e3ff
-architecture: iphoneos-arm
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/libundirect_1.1.5.deb
-version: 1.1.5
-section: Development
-sponsor: thebigboss.org <http://thebigboss.org>
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libundirectDp
-dev: opa334
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libundirectDp
-package: com.opa334.libundirect
-description: Patchfinder and rebinder for objc_direct methods
-name: libundirect
-author: opa334 <opa334@protonmail.com>
-maintainer: BigBoss <bigboss@thebigboss.org>
-size: 10828
-installed-size: 308
-md5sum: d8c5c4bd915f5e5cdbdb629eed4c0bbb
-
-name: CocoaTop64
-architecture: iphoneos-arm
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=cocoatop64Dp
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/cocoatop64_2.2.3.deb
-author: Domo <domo@rambler.ru>
-depends: firmware (>= 10.0)
-section: Utilities
-maintainer: BigBoss <bigboss@thebigboss.org>
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=cocoatop64Dp
-md5sum: da9a9e05ef94810edf785413b9fecb4c
-sha256: c37aae4fd62c5598fac4b6c2aab519a475404586f506c5324d7d0e9686c613e6
-sponsor: thebigboss.org <http://thebigboss.org>
-icon: file:///Applications/CocoaTop.app/Icon.png
-description: Process Viewer for iOS 10-13
-version: 2.2.3
-conflicts: ru.domo.cocoatop
-size: 232256
-dev: domo
-package: ru.domo.cocoatop64
-installed-size: 915
-
-sha256: 05c22ecf6464b7b258f744dafcee406315fabb393876680fef33053a16c5130b
-dev: opa334
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=safariplusDp
-version: 1.7.22
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/safariplus_1.7.22.deb
-installed-size: 5322
-author: opa334 <opa334@protonmail.com>
-architecture: iphoneos-arm
-size: 1186236
-name: Safari Plus
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=safariplusDp
-md5sum: 3185072c9e36994ba1263876e34a5a88
-description: Various enhancements to Safari!
-icon: file:///Library/PreferenceBundles/SafariPlusPrefs.bundle/SPPRootIcon@2x.png
-section: Tweaks
-sponsor: thebigboss.org <http://thebigboss.org>
-package: com.opa334.safariplus
-depends: firmware (>=8.0), mobilesubstrate, preferenceloader, com.opa334.libsandy, com.opa334.libundirect (>=1.1.3) | firmware (<<14.0), ws.hbang.common | firmware (>=11.0), com.creaturesurvive.libcscolorpicker | ws.hbang.alderis (>= 1.1)
-maintainer: BigBoss <bigboss@thebigboss.org>
-
-author: Karen/Akemi <angelXwind@angelxwind.net>
-dev: angelxwind
-md5sum: 018caee611c4e2fa9b1255d1647780e2
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=karenprefsDp
-depends: preferenceloader
-name: KarenPrefs
-sponsor: thebigboss.org <http://thebigboss.org>
-maintainer: BigBoss <bigboss@thebigboss.org>
-section: Development
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=karenprefsDp
-sha256: 75a704c961cfece945d9bea2674892482ca235e82c6546de723be79192f00bc1
-size: 21448
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/karenprefs_1.5.deb
-description: library for developer preference bundles
-package: net.angelxwind.karenprefs
-architecture: iphoneos-arm
-installed-size: 356
-version: 1.5
-
-section: Tweaks
-sha256: d06e18eefbfcb40f3e3b215bfbccaf34091fb30b2ccb1e4f6c519aa91d2b7248
-depiction: https://www.rpetrich.com/cydia/rocketbootstrap/beta/
-architecture: iphoneos-arm
-size: 38344
-installed-size: 596
-version: 1.0.10~beta1
-depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0)
-md5sum: b52417e29631c59cdb267379e71e2a69
-author: Ryan Petrich <rpetrich+rocketbootstrap@gmail.com>
-homepage: https://www.rpetrich.com/cydia/rocketbootstrap/beta/
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/com.rpetrich.rocketbootstrap_1.0.10_beta1.deb
-sponsor: thebigboss.org <http://thebigboss.org>
-maintainer: BigBoss <bigboss@thebigboss.org>
-description: Support library allowing tweaks to communicate with sandboxed processes
-name: RocketBootstrap
-dev: rpetrich
-package: com.rpetrich.rocketbootstrap
-
-size: 46884
-depends: firmware (>= 7.0)
-description: A modern AppList alternative
-sha256: fc867d441b375ef2759c7465c225eb29b3663243192fb69f169430087b377998
-dev: opa334
-sponsor: thebigboss.org <http://thebigboss.org>
-section: Development
-version: 1.0.10
-maintainer: BigBoss <bigboss@thebigboss.org>
-package: com.opa334.altlist
-name: AltList
-author: opa334 <opa334@protonmail.com>
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
-installed-size: 306
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/altlist_1.0.10.deb
-md5sum: ba58444d88ad1adbf8f327ad4c89be70
-architecture: iphoneos-arm
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
-
-depends: firmware (>= 9.0)
-md5sum: afe2213bbd52e6569c35f7e138f95360
-section: Multimedia
-pre-depends: cy+cpu.arm64
-description: Kodi Entertainment Center for iOS
-author: Team-Kodi <sy6sy2@kodi.tv>
-installed-size: 283500
-sha256: b53a6311e94843050bb43f8c6a4f0fca41015b64ecdf880b2cbc6ef4ad022383
-conflicts: org.xbmc.kodi-ios
-dev: teamkodi
-priority: optional
-maintainer: BigBoss <bigboss@thebigboss.org>
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/kodi64_20.0.deb
-size: 87790590
-icon: file:///Applications/Kodi.app/AppIcon57x57.png
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=kodi64Dp
-architecture: iphoneos-arm
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=kodi64Dp
-name: Kodi-iOS (64-bit)
-sponsor: thebigboss.org <http://thebigboss.org>
-replaces: org.xbmc.kodi-ios
-package: org.xbmc.kodi-ios64
-version: 20.0
-
-architecture: iphoneos-arm
-dev: jailbreak365
-section: Addons (ControlCenter)
-installed-size: 5131
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/ccmodules_1.5-1.deb
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccmodulesDp
-sha256: e32c31dd327daf2466119cdceafab191f7fc9aa931b506bbcee43a27b8df15ba
-package: com.jailbreak365.safeccmodules
-version: 1.5-1
-depends: mobilesubstrate (>= 0.9.5000), firmware (>= 11.0), com.opa334.ccsupport
 size: 1127042
-description: More control center modules for iOS 11/12/13
-maintainer: BigBoss <bigboss@thebigboss.org>
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccmodulesDp
+version: 1.5-1
+dev: jailbreak365
+sha256: e32c31dd327daf2466119cdceafab191f7fc9aa931b506bbcee43a27b8df15ba
 author: jailbreak365 <jailbreak365@mail.com>
+depends: mobilesubstrate (>= 0.9.5000), firmware (>= 11.0), com.opa334.ccsupport
+architecture: iphoneos-arm
 md5sum: 3ba1fd1aaa2f08af7d7c84c0ab9c6076
 name: CCModules
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccmodulesDp
-
-maintainer: Ryan Petrich <rpetrich@gmail.com>
-description: Allow extensions to read the list of installed apps
-size: 105098
-installed-size: 780
-conflicts: com.a3tweaks.polus (<< 2.0.7)
-name: AppList
-package: applist
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
-version: 1.5.16
-depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0), com.rpetrich.rocketbootstrap (>= 1.0.7~beta3) | firmware (<< 7.0)
-md5sum: af1bdc77dd1805c249d416fa96957841
-website: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
-sha256: b20901679ecd9a607636dd69d1c42fe074f6a3e8a5c21c20ecef893f1a9a4a7e
-section: System
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/applist_1.5.16_iphoneos-arm.deb
-author: Ryan Petrich <rpetrich@gmail.com>
-architecture: iphoneos-arm
-dev: rpetrich
-
-sponsor: thebigboss.org <http://thebigboss.org>
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=karenlocalizerDp
-section: Development
-version: 1.0.5
-architecture: iphoneos-arm
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/karenlocalizer_1.0.5.deb
-installed-size: 231
-name: KarenLocalizer
-md5sum: 1fd0c56e4eaa45ebbdbd0c93c6f15308
-size: 4760
-dev: angelxwind
-package: net.angelxwind.karenlocalizer
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=karenlocalizerDp
-author: Karen/Akemi (angelXwind) <karen@akemi.ai>
-description: library for developer localization
-depends: firmware (>= 5.0)
-sha256: 374f6baeba9f683d5ec8d334b6b295b960ba90226247e9ff67247c7f035e1ac7
+section: Addons (ControlCenter)
+package: com.jailbreak365.safeccmodules
 maintainer: BigBoss <bigboss@thebigboss.org>
+installed-size: 5131
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccmodulesDp
+description: More control center modules for iOS 11/12/13
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/ccmodules_1.5-1.deb
 
-package: com.creaturesurvive.libcscolorpicker
-description: A minimal color picker library for developers
-sponsor: thebigboss.org <http://thebigboss.org>
-author: CreatureSurvive <support@creaturecoding.com>
-section: Development
-maintainer: BigBoss <bigboss@thebigboss.org>
-dev: creaturecoding
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libcscolorpickerDp
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libcscolorpickerDp
-architecture: iphoneos-arm
-depends: firmware (>= 7.0), applist
-size: 84026
-version: 1.0
-installed-size: 502
-name: libCSColorPicker
-md5sum: b211aeb172e77e51b75ddf35efb66956
-sha256: 199ced0792b798a8402b382863ea899faf8872fb9fadf99fc6610c633fde93f4
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/libcscolorpicker_1.0.deb
-
-installed-size: 31815
-size: 10215790
-package: com.tigisoftware.filza
-version: 4.0.1-3
-priority: optional
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/filza_4.0.1-3.deb
-md5sum: 60322f74b0e669a35c04e3d864241e1e
-sponsor: thebigboss.org <http://thebigboss.org>
-depends: firmware (>= 7.0), zip, unzip, gzip, unrar, p7zip
-maintainer: BigBoss <bigboss@thebigboss.org>
-conflicts: com.tigisoftware.filza64bit, com.tigisoftware.filza39
-author: TIGI Software <satashi2009@gmail.com>
-name: Filza File Manager
-architecture: iphoneos-arm
-sha256: 4482445297cce926faede628d911bfc99ec0de5fafcea94e569dc59f6c169341
-icon: file:///Applications/Filza.app/AppIcon57x57.png
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=filzafilemanagerDp
-dev: satashi2009
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=filzafilemanagerDp
+package: com.malcolmhall.wifipasswords
 section: Utilities
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=wifipasswordsData
+maintainer: BigBoss <bigboss@thebigboss.org>
+version: 3.0.1
+installed-size: 4112
+sha256: 912d66b8455232842ce2dcd99ae98aad4cce17ba878cde48ce2e0f45ba545d58
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/wifipasswords_3.0.1.deb
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=wifipasswordsData
+size: 851520
+depends: firmware (>= 6.0)
+name: WiFi Passwords
+md5sum: c343f3b61169b5ebb122a06911d7d204
+icon: file:///Applications/WiFiPasswords.app/Icon.png
+architecture: iphoneos-arm
+description: shows previously entered wifi passwords
+This app displays every WiFi password you have ever entered. Very handy if you forgot a password and need to connect another device, or tell a friend the password for a coffee shop without asking that embarrassing question again. Tap hold on the password to copy it to the clipboard. Requires iOS 3.0 or later.
+dev: malcolmhall
+author: Malcolm Hall <indiekiduk@gmail.com>
+
+conflicts: com.tigisoftware.filza64bit, com.tigisoftware.filza39
+priority: optional
+sha256: 4482445297cce926faede628d911bfc99ec0de5fafcea94e569dc59f6c169341
+depends: firmware (>= 7.0), zip, unzip, gzip, unrar, p7zip
+size: 10215790
+md5sum: 60322f74b0e669a35c04e3d864241e1e
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=filzafilemanagerDp
+installed-size: 31815
 description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+
+sponsor: thebigboss.org <http://thebigboss.org>
+maintainer: BigBoss <bigboss@thebigboss.org>
+section: Utilities
+package: com.tigisoftware.filza
+name: Filza File Manager
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/filza_4.0.1-3.deb
+author: TIGI Software <satashi2009@gmail.com>
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=filzafilemanagerDp
+version: 4.0.1-3
+icon: file:///Applications/Filza.app/AppIcon57x57.png
+dev: satashi2009
+architecture: iphoneos-arm
 
+author: opa334 <opa334@protonmail.com>
+size: 1186236
+installed-size: 5322
+sponsor: thebigboss.org <http://thebigboss.org>
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/safariplus_1.7.22.deb
+version: 1.7.22
+name: Safari Plus
+package: com.opa334.safariplus
+architecture: iphoneos-arm
+section: Tweaks
+sha256: 05c22ecf6464b7b258f744dafcee406315fabb393876680fef33053a16c5130b
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=safariplusDp
+depends: firmware (>=8.0), mobilesubstrate, preferenceloader, com.opa334.libsandy, com.opa334.libundirect (>=1.1.3) | firmware (<<14.0), ws.hbang.common | firmware (>=11.0), com.creaturesurvive.libcscolorpicker | ws.hbang.alderis (>= 1.1)
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=safariplusDp
+dev: opa334
+md5sum: 3185072c9e36994ba1263876e34a5a88
+description: Various enhancements to Safari!
+maintainer: BigBoss <bigboss@thebigboss.org>
+icon: file:///Library/PreferenceBundles/SafariPlusPrefs.bundle/SPPRootIcon@2x.png
+
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/applibraryenabler_1.0.deb
+version: 1.0
+name: App Library Enabler
+package: com.tomaszpoliszuk.applibraryenabler
+size: 10710
+sponsor: thebigboss.org <http://thebigboss.org>
+dev: tomaszpoliszuk
+section: Tweaks
+depends: firmware (>= 14.0), mobilesubstrate, preferenceloader, cy+model.ipad
+description: Enable App Library on iPadOS
+sha256: 74f74251eee86fa362726f0fc0266648dd6708813aee4e655d96a83e4d4cb677
+maintainer: BigBoss <bigboss@thebigboss.org>
+conflicts: com.tomaszpoliszuk.applibrarydisabler
+md5sum: 79e6dbdbdf946df4672832d6a1fbaba8
+architecture: iphoneos-arm
+author: Tomasz Poliszuk <tomaszpoliszuk+bigboss@gmail.com>
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=applibraryenablerDp
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=applibraryenablerDp
+installed-size: 352
+
+depends: firmware (>= 7.0)
+dev: opa334
 section: Development
-name: libnotifications
-dev: cokepokes
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libnotificationsDp
-md5sum: f3a253c764f41a9756cc1dc6c8eaccbb
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/libnotifications_0.3-4.deb
-sponsor: thebigboss.org <http://thebigboss.org>
-installed-size: 910
-sha256: 286b89de309bdae2eb500e66bab4f737233157a78423dfef88b5038b5459de2f
-package: com.cokepokes.libnotifications
-priority: optional
-size: 74786
-maintainer: BigBoss <bigboss@thebigboss.org>
-description: App notification library.
-author: CokePokes <cokepokes@gmail.com>
-version: 0.3-4
-depends: firmware (>= 8.0)
 architecture: iphoneos-arm
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libnotificationsDp
-
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportDp
-version: 1.3.10-2
-sponsor: thebigboss.org <http://thebigboss.org>
-depends: firmware (>= 11.0), mobilesubstrate (>= 0.9.5000)
-section: Tweaks
-conflicts: com.ioscreatix.silo
-architecture: iphoneos-arm
-package: com.opa334.ccsupport
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/ccsupport_1.3.10-2.deb
-size: 59468
-installed-size: 381
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportDp
-replaces: com.ioscreatix.silo
-name: CCSupport
+name: AltList
 author: opa334 <opa334@protonmail.com>
-dev: opa334
 maintainer: BigBoss <bigboss@thebigboss.org>
-sha256: e7f5b1e2eaad65f3a5592a1c0fcd520a2c8942c671103caa8ef8b6854dbfecdb
-provides: com.ioscreatix.silo
-description: Support tweak for CC modules!
-md5sum: 02ce766a803095c658a61d4d91be96a4
+size: 46884
+sponsor: thebigboss.org <http://thebigboss.org>
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
+version: 1.0.10
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/altlist_1.0.10.deb
+installed-size: 306
+md5sum: ba58444d88ad1adbf8f327ad4c89be70
+sha256: fc867d441b375ef2759c7465c225eb29b3663243192fb69f169430087b377998
+package: com.opa334.altlist
+description: A modern AppList alternative
 
-md5sum: f39335d5fe3704e17bd80af0105a4317
-size: 2949012
-installed-size: 12520
-depends: mobilesubstrate, firmware (>= 5.0)
-package: com.lema.michael.rhino
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=rhinoDp
-icon: file:///Library/Application%20Support/Rhino.bundle/rhino-icon@2x.png
-name: Rhino
-priority: optional
-architecture: iphoneos-arm
-dev: lema
-maintainer: BigBoss <bigboss@thebigboss.org>
-section: Tweaks
-version: 3.9.2
 filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/rhino_3.9.2.deb
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=rhinoDp
-description: A simple, lightweight Instagram tweak with powerful features
-sponsor: thebigboss.org <http://thebigboss.org>
-author: Michael Lema <samewhitetee@gmail.com>
-sha256: 7c70598bd32c41de2cff29de8d296e4c65189b4f24d04a8973412bcea404b1b6
-
+size: 2949012
+package: com.lema.michael.rhino
+dev: lema
+installed-size: 12520
 section: Tweaks
-icon: file:///Library/PreferenceBundles/ChoicyPrefs.bundle/ChoicyIcon@2x.png
-name: Choicy
-description: Advanced Tweak Configuration!
+description: A simple, lightweight Instagram tweak with powerful features
 architecture: iphoneos-arm
-depends: firmware (>= 10.0), mobilesubstrate (>= 0.9.5000), preferenceloader, com.opa334.altlist (>= 1.0.4)
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/choicy_1.4.10-2.deb
-md5sum: f1f04e5794d14612343d0f05251b84c1
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=choicyDp
+author: Michael Lema <samewhitetee@gmail.com>
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=rhinoDp
 maintainer: BigBoss <bigboss@thebigboss.org>
-package: com.opa334.choicy
-version: 1.4.10-2
-size: 163858
-sha256: 9b9d3aa82a553e601b8163a6a56bfec66d1edbb73fbe27a905ed7af31dbad391
-author: opa334 <opa334@protonmail.com>
-dev: opa334
-installed-size: 1025
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=choicyDp
+version: 3.9.2
+md5sum: f39335d5fe3704e17bd80af0105a4317
+icon: file:///Library/Application%20Support/Rhino.bundle/rhino-icon@2x.png
 sponsor: thebigboss.org <http://thebigboss.org>
+depends: mobilesubstrate, firmware (>= 5.0)
+name: Rhino
+sha256: 7c70598bd32c41de2cff29de8d296e4c65189b4f24d04a8973412bcea404b1b6
+priority: optional
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=rhinoDp
 
-package: com.opa334.libsandy
-md5sum: 1c2e3d798eb67a1642af026cc2cda234
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
 sponsor: thebigboss.org <http://thebigboss.org>
-section: System
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
-description: Securely extend the sandbox of system processes and user applications
-author: opa334 <opa334@protonmail.com>
-version: 1.1.1
-size: 23872
+architecture: iphoneos-arm
+md5sum: 1c2e3d798eb67a1642af026cc2cda234
 name: libSandy
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
+version: 1.1.1
+depends: firmware (>= 8.0), mobilesubstrate (>= 0.9.5000)
+sha256: 8cb4fe1d380e1000222512b84fab812ef533acdf2941068887bfb98073702a5d
+maintainer: BigBoss <bigboss@thebigboss.org>
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/libsandy_1.1.1.deb
+size: 23872
+package: com.opa334.libsandy
 conflicts: ws.hbang.stopcrashingpls (<= 1.0.2)
 installed-size: 443
-maintainer: BigBoss <bigboss@thebigboss.org>
-depends: firmware (>= 8.0), mobilesubstrate (>= 0.9.5000)
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/libsandy_1.1.1.deb
-sha256: 8cb4fe1d380e1000222512b84fab812ef533acdf2941068887bfb98073702a5d
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
 dev: opa334
+description: Securely extend the sandbox of system processes and user applications
+section: System
+author: opa334 <opa334@protonmail.com>
+
+installed-size: 9121
+maintainer: BigBoss <bigboss@thebigboss.org>
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=appsmanagerDp
+size: 2518478
+package: com.tigisoftware.appdatamanager
+sha256: 4ef336fc36f0b132b237a3ffb832259c729c2a237c42e9b39d8ee46573fddc5c
+icon: file:///Applications/ADManager.app/AppIcon60x60@2x.png
+version: 1.8.2-5
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/appsmanager_1.8.2-5.deb
+priority: optional
+depends: firmware (>= 7.0)
+name: Apps Manager
+author: TIGI Software <satashi2009@gmail.com>
+description: Tool to WIPE, BACKUP, RESTORE AppData for installed Apps
+md5sum: eb6c5095ab86800f5e49b8df091f07a2
+dev: satashi2009
+architecture: iphoneos-arm
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=appsmanagerDp
+section: Utilities
+sponsor: thebigboss.org <http://thebigboss.org>
+
+description: Advanced Tweak Configuration!
+md5sum: f1f04e5794d14612343d0f05251b84c1
+sponsor: thebigboss.org <http://thebigboss.org>
+package: com.opa334.choicy
+section: Tweaks
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/choicy_1.4.10-2.deb
+dev: opa334
+version: 1.4.10-2
+depends: firmware (>= 10.0), mobilesubstrate (>= 0.9.5000), preferenceloader, com.opa334.altlist (>= 1.0.4)
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=choicyDp
+maintainer: BigBoss <bigboss@thebigboss.org>
+name: Choicy
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=choicyDp
+author: opa334 <opa334@protonmail.com>
+installed-size: 1025
+icon: file:///Library/PreferenceBundles/ChoicyPrefs.bundle/ChoicyIcon@2x.png
+architecture: iphoneos-arm
+size: 163858
+sha256: 9b9d3aa82a553e601b8163a6a56bfec66d1edbb73fbe27a905ed7af31dbad391
+
+installed-size: 596
+author: Ryan Petrich <rpetrich+rocketbootstrap@gmail.com>
+md5sum: b52417e29631c59cdb267379e71e2a69
+sponsor: thebigboss.org <http://thebigboss.org>
+sha256: d06e18eefbfcb40f3e3b215bfbccaf34091fb30b2ccb1e4f6c519aa91d2b7248
+name: RocketBootstrap
+homepage: https://www.rpetrich.com/cydia/rocketbootstrap/beta/
+maintainer: BigBoss <bigboss@thebigboss.org>
+size: 38344
+section: Tweaks
+architecture: iphoneos-arm
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/com.rpetrich.rocketbootstrap_1.0.10_beta1.deb
+version: 1.0.10~beta1
+depiction: https://www.rpetrich.com/cydia/rocketbootstrap/beta/
+description: Support library allowing tweaks to communicate with sandboxed processes
+package: com.rpetrich.rocketbootstrap
+dev: rpetrich
+depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0)
+
+section: Development
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libundirectDp
+name: libundirect
+dev: opa334
+package: com.opa334.libundirect
+md5sum: d8c5c4bd915f5e5cdbdb629eed4c0bbb
+architecture: iphoneos-arm
+size: 10828
+description: Patchfinder and rebinder for objc_direct methods
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libundirectDp
+version: 1.1.5
+sponsor: thebigboss.org <http://thebigboss.org>
+author: opa334 <opa334@protonmail.com>
+maintainer: BigBoss <bigboss@thebigboss.org>
+sha256: 7f009a37a6bcf36fd0b7d41b8f3fd2358e96039eb3cde845ea1375d55d86e3ff
+installed-size: 308
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/libundirect_1.1.5.deb
+
+maintainer: BigBoss <bigboss@thebigboss.org>
+sponsor: thebigboss.org <http://thebigboss.org>
+size: 21448
+installed-size: 356
+package: net.angelxwind.karenprefs
+author: Karen/Akemi <angelXwind@angelxwind.net>
+dev: angelxwind
+section: Development
+architecture: iphoneos-arm
+name: KarenPrefs
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=karenprefsDp
+md5sum: 018caee611c4e2fa9b1255d1647780e2
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/karenprefs_1.5.deb
+sha256: 75a704c961cfece945d9bea2674892482ca235e82c6546de723be79192f00bc1
+version: 1.5
+depends: preferenceloader
+description: library for developer preference bundles
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=karenprefsDp
+
+sha256: c37aae4fd62c5598fac4b6c2aab519a475404586f506c5324d7d0e9686c613e6
+depends: firmware (>= 10.0)
+architecture: iphoneos-arm
+icon: file:///Applications/CocoaTop.app/Icon.png
+description: Process Viewer for iOS 10-13
+maintainer: BigBoss <bigboss@thebigboss.org>
+md5sum: da9a9e05ef94810edf785413b9fecb4c
+version: 2.2.3
+name: CocoaTop64
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/cocoatop64_2.2.3.deb
+package: ru.domo.cocoatop64
+installed-size: 915
+dev: domo
+section: Utilities
+size: 232256
+conflicts: ru.domo.cocoatop
+author: Domo <domo@rambler.ru>
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=cocoatop64Dp
+sponsor: thebigboss.org <http://thebigboss.org>
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=cocoatop64Dp
+
+author: Team-Kodi <sy6sy2@kodi.tv>
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=kodi64Dp
+dev: teamkodi
+size: 87790590
+conflicts: org.xbmc.kodi-ios
+priority: optional
+icon: file:///Applications/Kodi.app/AppIcon57x57.png
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=kodi64Dp
+version: 20.0
+md5sum: afe2213bbd52e6569c35f7e138f95360
+depends: firmware (>= 9.0)
+architecture: iphoneos-arm
+description: Kodi Entertainment Center for iOS
+package: org.xbmc.kodi-ios64
+name: Kodi-iOS (64-bit)
+replaces: org.xbmc.kodi-ios
+section: Multimedia
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/kodi64_20.0.deb
+installed-size: 283500
+maintainer: BigBoss <bigboss@thebigboss.org>
+pre-depends: cy+cpu.arm64
+sha256: b53a6311e94843050bb43f8c6a4f0fca41015b64ecdf880b2cbc6ef4ad022383
+sponsor: thebigboss.org <http://thebigboss.org>
+
+md5sum: 551c39b9d6d58be5ad82e81a59a1715f
+sha256: 335fff25ff13021889ba856ce84fbc23ba25569f1c6cc65a3e113b433b1ed60f
+size: 36414
+depends: mobilesubstrate
+name: PreferenceLoader
+author: Sam Bingner <maintainer@sbdhi.com>
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/preferenceloader_2.2.6.deb
+version: 2.2.6
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+description: load preferences in style
+section: System
+package: preferenceloader
+dev: dustinhowett
+maintainer: BigBoss <bigboss@thebigboss.org>
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+installed-size: 526
 architecture: iphoneos-arm
 
+architecture: iphoneos-arm
+size: 178342
+package: xyz.xninja.systeminfo
 name: System Info
 priority: optional
 maintainer: BigBoss <bigboss@thebigboss.org>
-architecture: iphoneos-arm
+sha256: d80ccf9d58ae643ef2d638d76984adb0f6897229be7ff63ac669c2236c50180d
 depends: mobilesubstrate, firmware (>= 3.0)
-description: System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc
-dev: arx8x
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/systeminfo_2.0.0-1.deb
 md5sum: 9be407c44397f32812cf980f0465bd1a
+description: System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc
+sponsor: thebigboss.org <http://thebigboss.org>
 author: ARX8x <arx8@icloud.com>
-package: xyz.xninja.systeminfo
-section: Tweaks
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=systeminfoDp
+version: 2.0.0-1
+dev: arx8x
 depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=systeminfoDp
 installed-size: 913
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=systeminfoDp
-sha256: d80ccf9d58ae643ef2d638d76984adb0f6897229be7ff63ac669c2236c50180d
-size: 178342
-version: 2.0.0-1
-sponsor: thebigboss.org <http://thebigboss.org>
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/systeminfo_2.0.0-1.deb
+section: Tweaks
 
+depends: firmware (>= 7.0), applist
+dev: creaturecoding
+md5sum: b211aeb172e77e51b75ddf35efb66956
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libcscolorpickerDp
+size: 84026
+author: CreatureSurvive <support@creaturecoding.com>
+maintainer: BigBoss <bigboss@thebigboss.org>
+version: 1.0
+package: com.creaturesurvive.libcscolorpicker
+section: Development
+installed-size: 502
+sponsor: thebigboss.org <http://thebigboss.org>
+name: libCSColorPicker
+sha256: 199ced0792b798a8402b382863ea899faf8872fb9fadf99fc6610c633fde93f4
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/libcscolorpicker_1.0.deb
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libcscolorpickerDp
+description: A minimal color picker library for developers
 architecture: iphoneos-arm
-depiction: https://repo.dynastic.co/depiction/384973091832332288/
+
+website: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
+version: 1.5.16
+author: Ryan Petrich <rpetrich@gmail.com>
+maintainer: Ryan Petrich <rpetrich@gmail.com>
+name: AppList
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0/applist_1.5.16_iphoneos-arm.deb
+architecture: iphoneos-arm
+depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0), com.rpetrich.rocketbootstrap (>= 1.0.7~beta3) | firmware (<< 7.0)
+package: applist
+sha256: b20901679ecd9a607636dd69d1c42fe074f6a3e8a5c21c20ecef893f1a9a4a7e
+description: Allow extensions to read the list of installed apps
+section: System
+size: 105098
+installed-size: 780
+dev: rpetrich
+conflicts: com.a3tweaks.polus (<< 2.0.7)
+md5sum: af1bdc77dd1805c249d416fa96957841
+
+filename: https://repo.dynastic.co/deb/739f3faf6035be1de232833796947f5d.deb
 package: dev.ayden.ios.tweak.lib.libdundas
 section: Development
-author: Ayden Panhuyzen
-sha1: c5be57aeeafc4408e2b54d548b1e59482707ac85
-sha256: 13f6bbadc25e00384c0f825963aa3769812a9e8737f1609dc530267ac650dc8f
-installed-size: 332
-md5sum: 739f3faf6035be1de232833796947f5d
-depends: mobilesubstrate, firmware (>= 9.0)
-maintainer: Ayden Panhuyzen
-filename: https://repo.dynastic.co/deb/739f3faf6035be1de232833796947f5d.deb
 sileodepiction: https://repo.dynastic.co/sileo-depiction/384973091832332288/
-name: libdundas
-description: Shared utilities for my tweaks.
-size: 40022
-version: 1.0.3
-
-name: libaurora
-depends: mobilesubstrate, firmware (>= 11.0)
-filename: https://repo.dynastic.co/deb/14572873fb3810a4d50b887415e0001d.deb
-sha1: 14c1b87c83095ec23c6f4d81a8bdda7e072e078f
-architecture: iphoneos-arm
 maintainer: Ayden Panhuyzen
-size: 10514
-section: Development
-package: dev.ayden.ios.lib.sys.aurora
-installed-size: 144
-depiction: https://repo.dynastic.co/depiction/317551823277785088/
-sileodepiction: https://repo.dynastic.co/sileo-depiction/317551823277785088/
+depiction: https://repo.dynastic.co/depiction/384973091832332288/
+sha256: 13f6bbadc25e00384c0f825963aa3769812a9e8737f1609dc530267ac650dc8f
+depends: mobilesubstrate, firmware (>= 9.0)
 author: Ayden Panhuyzen
-md5sum: 14572873fb3810a4d50b887415e0001d
-sha256: d7fc42ef71e20a536a1e5aaab2518be994314a3530aaf4435421f87a543389ce
+md5sum: 739f3faf6035be1de232833796947f5d
+sha1: c5be57aeeafc4408e2b54d548b1e59482707ac85
+size: 40022
+description: Shared utilities for my tweaks.
+architecture: iphoneos-arm
+name: libdundas
 version: 1.0.3
-description: Specialized out-of-process weather utility library.
+installed-size: 332
 
-author: Mirac
-description: A theme for iOS. Clean, familiar, yet new. — kindaStock improves on the stock iOS icons while staying true to the original. Every icon is carefully crafted with love and attention to detail to give your device a fresh new look while keeping
-section: Themes
-version: 1.0.1
-md5sum: d509a22561ccf066eb57fccf38d48e5a
+version: 1.0.23
+sileodepiction: https://repo.dynastic.co/sileo-depiction/68292503631036416/
+maintainer: Ayden Panhuyzen
+description: Your notifications. At a glance. — Supports iOS 11 to 14.
+md5sum: e0385d50470f0aabb6198e16da2f8b4b
+sha1: 576514c2bc46176e61f80e7e9d054b584da6b2a6
+icon: https://repo-archive-cdn.dynastic.co/fd376d379e919872d48638d894fb9351.png_166.png
+name: ShortLook
+size: 1294668
+section: Tweaks
+sha256: a8ff2a582ebe1d6e2f5f3b89e101abad938769da32aeceb973fd5ef11e6441ff
+installed-size: 2128
+depiction: https://repo.dynastic.co/depiction/68292503631036416/
+filename: https://repo.dynastic.co/deb/e0385d50470f0aabb6198e16da2f8b4b.deb
+depends: mobilesubstrate, firmware (>= 11.0), co.dynastic.ios.lib.flora
+author: Dynastic
+package: co.dynastic.ios.tweak.shortlook
+architecture: iphoneos-arm
+homepage: https://www.dynastic.co/shortlook/?refsrc=repo
+
+package: com.mirac.kindastock
+sha1: b9ad8b332c69baaab359ecffc619a8115da57493
 sha256: fba2f688ed757e4e83f6637bd45567d7ee01ca5dc9cf56f1798a69dc30802b0b
+name: kindaStock
+architecture: iphoneos-arm
 maintainer: Mirac <ozd.mirac@gmail.com>
-depends: com.spark.snowboard | net.dodtweaks.ithemer | com.anemonetheming.anemone | com.artikus.neonboard | winterboard
+description: A theme for iOS. Clean, familiar, yet new. — kindaStock improves on the stock iOS icons while staying true to the original. Every icon is carefully crafted with love and attention to detail to give your device a fresh new look while keeping
+size: 5367244
 filename: https://repo.dynastic.co/deb/d509a22561ccf066eb57fccf38d48e5a.deb
 icon: https://repo-archive-cdn.dynastic.co/258aa692e4dfd6113bd118fc09faa1b8.png_120.png
 depiction: https://repo.dynastic.co/depiction/317987832943607808/
-package: com.mirac.kindastock
-name: kindaStock
-sha1: b9ad8b332c69baaab359ecffc619a8115da57493
 sileodepiction: https://repo.dynastic.co/sileo-depiction/317987832943607808/
-architecture: iphoneos-arm
-size: 5367244
-
-depiction: https://repo.dynastic.co/depiction/88709621761441792/
-sileodepiction: https://repo.dynastic.co/sileo-depiction/88709621761441792/
-name: Ultrasound
-depends: mobilesubstrate, firmware (>= 11.0), preferenceloader, dev.ayden.ios.tweak.lib.libdundas
-description: The volume HUD you deserve. — Supports iOS 11.0 to 13.7. Ultrasound is now end-of-life and is unlikely to receive updates.
-section: Tweaks
-sha256: ff543d46cee0c5b143583c61fa3d3c9269e284ce2bdbd1f3957eea3912bd86ad
-md5sum: 05773a164a2c79f209e7bec9a4c39b48
-icon: https://repo-archive-cdn.dynastic.co/08d5e7974fe22f09dae72199305a7f80.png_120.png
-size: 253166
-author: Ayden Panhuyzen
-version: 1.2.14
-conflicts: com.ruler225.videohud, com.spark.melior, net.midkin.smartvolumecontrol2, es.ubikstyl.sonus12, me.nepeta.brokenhud, me.nepeta.flashyhud, hi.my.name.is.ubik.sonus13, com.ikilledappl3.switchhud, com.muirey03.13hud, com.kingpuffdaddi.ringer13
-package: applebetas.ios.tweak.willow
-architecture: iphoneos-arm
-sha1: 5106ed6c327e51155e67f1ed4ea47c474edafe2b
-maintainer: Ayden Panhuyzen
-installed-size: 984
-filename: https://repo.dynastic.co/deb/05773a164a2c79f209e7bec9a4c39b48.deb
-
-section: Tweaks
-md5sum: e0385d50470f0aabb6198e16da2f8b4b
-architecture: iphoneos-arm
-description: Your notifications. At a glance. — Supports iOS 11 to 14.
-installed-size: 2128
-icon: https://repo-archive-cdn.dynastic.co/fd376d379e919872d48638d894fb9351.png_166.png
-version: 1.0.23
-sileodepiction: https://repo.dynastic.co/sileo-depiction/68292503631036416/
-name: ShortLook
-author: Dynastic
-filename: https://repo.dynastic.co/deb/e0385d50470f0aabb6198e16da2f8b4b.deb
-sha256: a8ff2a582ebe1d6e2f5f3b89e101abad938769da32aeceb973fd5ef11e6441ff
-size: 1294668
-sha1: 576514c2bc46176e61f80e7e9d054b584da6b2a6
-package: co.dynastic.ios.tweak.shortlook
-depiction: https://repo.dynastic.co/depiction/68292503631036416/
-homepage: https://www.dynastic.co/shortlook/?refsrc=repo
-depends: mobilesubstrate, firmware (>= 11.0), co.dynastic.ios.lib.flora
-maintainer: Ayden Panhuyzen
-
-package: co.dynastic.ios.lib.flora
-md5sum: e21e0ca1462f005e90de18a4be8c88c1
-name: libflora
-maintainer: Ayden Panhuyzen
 version: 1.0.1
+section: Themes
+depends: com.spark.snowboard | net.dodtweaks.ithemer | com.anemonetheming.anemone | com.artikus.neonboard | winterboard
+author: Mirac
+md5sum: d509a22561ccf066eb57fccf38d48e5a
+
+sha1: cb395a5d7c32ecb9226383c7864c8668d4c86700
+description: A vivid, gradient theme with a familiar feel. — About:
+icon: https://repo-archive-cdn.dynastic.co/ae41f4f24a045ac2c069e0dd8008b01f.png_120.png
+architecture: iphoneos-arm
+author: Lane Landas
+depends: com.anemonetheming.anemone | com.spark.snowboard
+filename: https://repo.dynastic.co/deb/54fbb8f191630b527289cd30d1b55bed.deb
+section: Themes
+md5sum: 54fbb8f191630b527289cd30d1b55bed
+name: Chroma
+package: com.nwlandas.chroma
+version: 1.2.2.5
+sileodepiction: https://repo.dynastic.co/sileo-depiction/332746325466546176/
+maintainer: nwlandas
+depiction: https://repo.dynastic.co/depiction/332746325466546176/
+size: 29497192
+sha256: f54874a50e0a92ee02b45eaddb6cf22a5ae4e8c9e12a45c8f0eebe8004c198b2
+
+author: Dynastic
+version: 1.0.1
+filename: https://repo.dynastic.co/deb/e21e0ca1462f005e90de18a4be8c88c1.deb
+package: co.dynastic.ios.lib.flora
 sileodepiction: https://repo.dynastic.co/sileo-depiction/310248158422630400/
+depiction: https://repo.dynastic.co/depiction/310248158422630400/
+depends: mobilesubstrate, preferenceloader, firmware (>= 11.0)
+sha1: 0ad2fcefd4405ce3d13aa709d7ccd59cf867ed13
+installed-size: 492
 sha256: 01565e05ee14b5a13f0b712c4ddfc9e8d13d8e224e202638dd4c535fc166f16b
 architecture: iphoneos-arm
+name: libflora
+section: Development
 description: Shared utilities for Dynastic tweaks.
-section: Development
-depiction: https://repo.dynastic.co/depiction/310248158422630400/
-filename: https://repo.dynastic.co/deb/e21e0ca1462f005e90de18a4be8c88c1.deb
 size: 95608
-installed-size: 492
-depends: mobilesubstrate, preferenceloader, firmware (>= 11.0)
-author: Dynastic
-sha1: 0ad2fcefd4405ce3d13aa709d7ccd59cf867ed13
+maintainer: Ayden Panhuyzen
+md5sum: e21e0ca1462f005e90de18a4be8c88c1
 
-filename: https://repo.dynastic.co/deb/54fbb8f191630b527289cd30d1b55bed.deb
-architecture: iphoneos-arm
-sileodepiction: https://repo.dynastic.co/sileo-depiction/332746325466546176/
-section: Themes
-maintainer: nwlandas
-md5sum: 54fbb8f191630b527289cd30d1b55bed
-package: com.nwlandas.chroma
-name: Chroma
-description: A vivid, gradient theme with a familiar feel. — About:
-version: 1.2.2.5
-depiction: https://repo.dynastic.co/depiction/332746325466546176/
-author: Lane Landas
-sha1: cb395a5d7c32ecb9226383c7864c8668d4c86700
-depends: com.anemonetheming.anemone | com.spark.snowboard
-sha256: f54874a50e0a92ee02b45eaddb6cf22a5ae4e8c9e12a45c8f0eebe8004c198b2
-icon: https://repo-archive-cdn.dynastic.co/ae41f4f24a045ac2c069e0dd8008b01f.png_120.png
-size: 29497192
-
-installed-size: 200
+size: 253166
+md5sum: 05773a164a2c79f209e7bec9a4c39b48
+installed-size: 984
 section: Tweaks
-filename: https://repo.dynastic.co/deb/5d0b16c0b0507b68a7ffe60dc56804fd.deb
-description: An alternate system font for your iOS device. — The interface you know. The font you didn't know you needed.
-author: Jamie Bishop
-size: 4004
-depends: mobilesubstrate
-maintainer: Jamie Bishop <jamie@dynastic.co>
-sha256: 18e289f0e95f38e15bcd580529502c4d4b8064c45f33c333969cf03a0dac24b8
-name: Compactor
+package: applebetas.ios.tweak.willow
 architecture: iphoneos-arm
-icon: https://repo-archive-cdn.dynastic.co/b27ae14334c553ee8002785b8bb1236c.jpeg_120.jpeg
+description: The volume HUD you deserve. — Supports iOS 11.0 to 13.7. Ultrasound is now end-of-life and is unlikely to receive updates.
+conflicts: com.ruler225.videohud, com.spark.melior, net.midkin.smartvolumecontrol2, es.ubikstyl.sonus12, me.nepeta.brokenhud, me.nepeta.flashyhud, hi.my.name.is.ubik.sonus13, com.ikilledappl3.switchhud, com.muirey03.13hud, com.kingpuffdaddi.ringer13
+sha256: ff543d46cee0c5b143583c61fa3d3c9269e284ce2bdbd1f3957eea3912bd86ad
+depends: mobilesubstrate, firmware (>= 11.0), preferenceloader, dev.ayden.ios.tweak.lib.libdundas
+maintainer: Ayden Panhuyzen
+filename: https://repo.dynastic.co/deb/05773a164a2c79f209e7bec9a4c39b48.deb
+icon: https://repo-archive-cdn.dynastic.co/08d5e7974fe22f09dae72199305a7f80.png_120.png
+name: Ultrasound
+depiction: https://repo.dynastic.co/depiction/88709621761441792/
+version: 1.2.14
+author: Ayden Panhuyzen
+sileodepiction: https://repo.dynastic.co/sileo-depiction/88709621761441792/
+sha1: 5106ed6c327e51155e67f1ed4ea47c474edafe2b
+
+filename: https://repo.dynastic.co/deb/14572873fb3810a4d50b887415e0001d.deb
+size: 10514
+md5sum: 14572873fb3810a4d50b887415e0001d
+maintainer: Ayden Panhuyzen
+depiction: https://repo.dynastic.co/depiction/317551823277785088/
+architecture: iphoneos-arm
+author: Ayden Panhuyzen
+depends: mobilesubstrate, firmware (>= 11.0)
+installed-size: 144
+sha1: 14c1b87c83095ec23c6f4d81a8bdda7e072e078f
+version: 1.0.3
+package: dev.ayden.ios.lib.sys.aurora
+description: Specialized out-of-process weather utility library.
+sha256: d7fc42ef71e20a536a1e5aaab2518be994314a3530aaf4435421f87a543389ce
+name: libaurora
+section: Development
+sileodepiction: https://repo.dynastic.co/sileo-depiction/317551823277785088/
+
 sileodepiction: https://repo.dynastic.co/sileo-depiction/267378657834565632/
+icon: https://repo-archive-cdn.dynastic.co/b27ae14334c553ee8002785b8bb1236c.jpeg_120.jpeg
+description: An alternate system font for your iOS device. — The interface you know. The font you didn't know you needed.
 version: 1.0.2
-depiction: https://repo.dynastic.co/depiction/267378657834565632/
-package: co.dynastic.ios.tweak.compactor
+size: 4004
+sha256: 18e289f0e95f38e15bcd580529502c4d4b8064c45f33c333969cf03a0dac24b8
 sha1: 858baad87fc3255a4133e0b101f00633b291db21
+architecture: iphoneos-arm
+author: Jamie Bishop
+package: co.dynastic.ios.tweak.compactor
+name: Compactor
+depiction: https://repo.dynastic.co/depiction/267378657834565632/
+section: Tweaks
+depends: mobilesubstrate
+installed-size: 200
+filename: https://repo.dynastic.co/deb/5d0b16c0b0507b68a7ffe60dc56804fd.deb
+maintainer: Jamie Bishop <jamie@dynastic.co>
 md5sum: 5d0b16c0b0507b68a7ffe60dc56804fd
-
-description: Advanced Tweak Configuration!
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=choicyDp
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/choicy_1.4.10-2_iphoneos-arm64.deb
-maintainer: BigBoss <bigboss@thebigboss.org>
-md5sum: d2f8c5c9fa130a2cdc06c5451e9dc717
-depends: firmware (>= 10.0), mobilesubstrate (>= 0.9.5000), preferenceloader, com.opa334.altlist (>= 1.0.4)
-icon: file:///Library/PreferenceBundles/ChoicyPrefs.bundle/ChoicyIcon@2x.png
-size: 104772
-sponsor: thebigboss.org <http://thebigboss.org>
-architecture: iphoneos-arm64
-name: Choicy
-author: opa334 <opa334@protonmail.com>
-installed-size: 813
-section: Tweaks
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=choicyDp
-dev: opa334
-version: 1.4.10-2
-package: com.opa334.choicy
-sha256: d07ba4b4cae6db9c3a07db742dc80ffc2e54f98627112bb97a674e4188eca1cf
-
-name: CCSupport
-author: opa334 <opa334@protonmail.com>
-dev: opa334
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportDp
-section: Tweaks
-conflicts: com.ioscreatix.silo
-sponsor: thebigboss.org <http://thebigboss.org>
-replaces: com.ioscreatix.silo
-description: Support tweak for CC modules!
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportDp
-sha256: c5097a205e6cc8370dd69c245b918fd69e2022ddf6a29624b645aaf881b755dd
-package: com.opa334.ccsupport
-version: 1.3.10-2
-depends: firmware (>= 11.0), mobilesubstrate (>= 0.9.5000)
-architecture: iphoneos-arm64
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/ccsupport_1.3.10-2_iphoneos-arm64.deb
-maintainer: BigBoss <bigboss@thebigboss.org>
-provides: com.ioscreatix.silo
-size: 55778
-md5sum: 4d7c268713deb29d0d8e23157d33bb2d
-installed-size: 453
-
-version: 2.2.6-1
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/preferenceloader_2.2.6-1_iphoneos-arm64.deb
-architecture: iphoneos-arm64
-size: 17604
-md5sum: 7f8e8ed7a44c2c04c777ba823df0cc0e
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
-depends: mobilesubstrate, firmware (>= 15.0)
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
-description: load preferences in style
-sha256: d5553f68d58fb5dd2ebda950f9b5e4d5119118cd5c8c49a08379521cc9636460
-installed-size: 353
-dev: dhinakg
-package: preferenceloader
-section: System
-maintainer: BigBoss <bigboss@thebigboss.org>
-author: Dhinak G <dhinak@dhinak.net>
-name: PreferenceLoader
-
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/libsandy_1.1.1_iphoneos-arm64.deb
-architecture: iphoneos-arm64
-author: opa334 <opa334@protonmail.com>
-md5sum: 1ae036d560b59bf69292c60fdaa3bbb1
-maintainer: BigBoss <bigboss@thebigboss.org>
-size: 11982
-version: 1.1.1
-depends: firmware (>= 8.0), mobilesubstrate (>= 0.9.5000)
-conflicts: ws.hbang.stopcrashingpls (<= 1.0.2)
-sha256: c90e7819c2cbbfc44ae3cd8f4e136c1be5174c96910700d70d66cbc3f0c1af68
-package: com.opa334.libsandy
-installed-size: 342
-sponsor: thebigboss.org <http://thebigboss.org>
-name: libSandy
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
-description: Securely extend the sandbox of system processes and user applications
-dev: opa334
-section: System
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
-
-icon: file:///Applications/Filza.app/AppIcon57x57.png
-md5sum: 4812dc73e2ed0a0281b18e876d96edf1
-conflicts: com.tigisoftware.filza64bit, com.tigisoftware.filza39
-section: Utilities
-description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+
-size: 10216820
-architecture: iphoneos-arm64
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/filza_4.0.1-3_iphoneos-arm64.deb
-package: com.tigisoftware.filza
-sha256: 918a39bd1cf0edefe1bb1a0fbb2253ad764a5633649a22c85ae3df7e33689586
-author: TIGI Software <satashi2009@gmail.com>
-dev: satashi2009
-sponsor: thebigboss.org <http://thebigboss.org>
-version: 4.0.1-3
-installed-size: 31822
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=filzafilemanagerDp
-priority: optional
-name: Filza File Manager
-depends: firmware (>= 7.0), zip, unzip, gzip, unrar, p7zip
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=filzafilemanagerDp
-maintainer: BigBoss <bigboss@thebigboss.org>
-
-section: Development
-architecture: iphoneos-arm64
-sha256: db882618f494fc4ab3bdea01321b56fb08d3fc3d5a395b4210d843a955e3a491
-md5sum: 359166b23822123a76c2b7dc3e4afea3
-version: 1.0.10
-author: opa334 <opa334@protonmail.com>
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
-dev: opa334
-depends: firmware (>= 7.0)
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/altlist_1.0.10_iphoneos-arm64.deb
-size: 27784
-sponsor: thebigboss.org <http://thebigboss.org>
-package: com.opa334.altlist
-installed-size: 256
-description: A modern AppList alternative
-maintainer: BigBoss <bigboss@thebigboss.org>
-name: AltList
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
-
-author: opa334 <opa334@protonmail.com>
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libundirectDp
-installed-size: 175
-sha256: 1aed213fc9b2ba3a77492ae7b9e6884a2689783617c11941c60889db805647c9
-section: Development
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libundirectDp
-size: 6646
-architecture: iphoneos-arm64
-maintainer: BigBoss <bigboss@thebigboss.org>
-description: Patchfinder and rebinder for objc_direct methods
-md5sum: ff0055f43fa35cedb65a956e95a5fdf0
-package: com.opa334.libundirect
-version: 1.1.5
-dev: opa334
-filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/libundirect_1.1.5_iphoneos-arm64.deb
-name: libundirect
-sponsor: thebigboss.org <http://thebigboss.org>
 
 filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/appsmanager_1.8.2-5_iphoneos-arm64.deb
-name: Apps Manager
-package: com.tigisoftware.appdatamanager
-priority: optional
-section: Utilities
-installed-size: 9121
 md5sum: c21dd211678c92b797c45629cadb9f51
-sha256: d8ce1ed3d5ca7eea030e65221cc77ffce5a0bf2ae18690a84b02349ec1f0ab64
-depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=appsmanagerDp
 size: 2517320
-architecture: iphoneos-arm64
-version: 1.8.2-5
-icon: file:///Applications/ADManager.app/AppIcon60x60@2x.png
-homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=appsmanagerDp
-author: TIGI Software <satashi2009@gmail.com>
 maintainer: BigBoss <bigboss@thebigboss.org>
 description: Tool to WIPE, BACKUP, RESTORE AppData for installed Apps
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=appsmanagerDp
+section: Utilities
+name: Apps Manager
+icon: file:///Applications/ADManager.app/AppIcon60x60@2x.png
+author: TIGI Software <satashi2009@gmail.com>
+installed-size: 9121
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=appsmanagerDp
+version: 1.8.2-5
 sponsor: thebigboss.org <http://thebigboss.org>
-dev: satashi2009
 depends: firmware (>= 7.0), ldid
+dev: satashi2009
+priority: optional
+sha256: d8ce1ed3d5ca7eea030e65221cc77ffce5a0bf2ae18690a84b02349ec1f0ab64
+package: com.tigisoftware.appdatamanager
+architecture: iphoneos-arm64
 
-sha1: cb395a5d7c32ecb9226383c7864c8668d4c86700
-author: Lane Landas
-sileodepiction: https://repo.dynastic.co/sileo-depiction/332746325466546176/
-architecture: iphoneos-arm
-section: Themes
-name: Chroma
-version: 1.2.2.5
-maintainer: nwlandas
-size: 29497192
-filename: https://repo.dynastic.co/deb/54fbb8f191630b527289cd30d1b55bed.deb
-depends: com.anemonetheming.anemone | com.spark.snowboard
-md5sum: 54fbb8f191630b527289cd30d1b55bed
-package: com.nwlandas.chroma
-sha256: f54874a50e0a92ee02b45eaddb6cf22a5ae4e8c9e12a45c8f0eebe8004c198b2
-icon: https://repo-archive-cdn.dynastic.co/ae41f4f24a045ac2c069e0dd8008b01f.png_120.png
-depiction: https://repo.dynastic.co/depiction/332746325466546176/
-description: A vivid, gradient theme with a familiar feel. — About:
-
-filename: https://repo.dynastic.co/deb/14572873fb3810a4d50b887415e0001d.deb
-architecture: iphoneos-arm
-sileodepiction: https://repo.dynastic.co/sileo-depiction/317551823277785088/
-section: Development
-maintainer: Ayden Panhuyzen
-md5sum: 14572873fb3810a4d50b887415e0001d
-package: dev.ayden.ios.lib.sys.aurora
-name: libaurora
-description: Specialized out-of-process weather utility library.
-version: 1.0.3
-depiction: https://repo.dynastic.co/depiction/317551823277785088/
-author: Ayden Panhuyzen
-sha1: 14c1b87c83095ec23c6f4d81a8bdda7e072e078f
-depends: mobilesubstrate, firmware (>= 11.0)
-sha256: d7fc42ef71e20a536a1e5aaab2518be994314a3530aaf4435421f87a543389ce
-installed-size: 144
-size: 10514
-
-section: Development
-author: Dynastic
-sha256: 01565e05ee14b5a13f0b712c4ddfc9e8d13d8e224e202638dd4c535fc166f16b
-sileodepiction: https://repo.dynastic.co/sileo-depiction/310248158422630400/
-installed-size: 492
-sha1: 0ad2fcefd4405ce3d13aa709d7ccd59cf867ed13
-depiction: https://repo.dynastic.co/depiction/310248158422630400/
-md5sum: e21e0ca1462f005e90de18a4be8c88c1
-architecture: iphoneos-arm
-package: co.dynastic.ios.lib.flora
-version: 1.0.1
-size: 95608
-description: Shared utilities for Dynastic tweaks.
-maintainer: Ayden Panhuyzen
-filename: https://repo.dynastic.co/deb/e21e0ca1462f005e90de18a4be8c88c1.deb
-name: libflora
-depends: mobilesubstrate, preferenceloader, firmware (>= 11.0)
-
-architecture: iphoneos-arm
-name: ShortLook
-installed-size: 2128
-version: 1.0.23
-filename: https://repo.dynastic.co/deb/e0385d50470f0aabb6198e16da2f8b4b.deb
-description: Your notifications. At a glance. — Supports iOS 11 to 14.
 section: Tweaks
-depiction: https://repo.dynastic.co/depiction/68292503631036416/
-size: 1294668
-md5sum: e0385d50470f0aabb6198e16da2f8b4b
-sha1: 576514c2bc46176e61f80e7e9d054b584da6b2a6
-sha256: a8ff2a582ebe1d6e2f5f3b89e101abad938769da32aeceb973fd5ef11e6441ff
-author: Dynastic
-sileodepiction: https://repo.dynastic.co/sileo-depiction/68292503631036416/
-depends: mobilesubstrate, firmware (>= 11.0), co.dynastic.ios.lib.flora
-package: co.dynastic.ios.tweak.shortlook
-icon: https://repo-archive-cdn.dynastic.co/fd376d379e919872d48638d894fb9351.png_166.png
-homepage: https://www.dynastic.co/shortlook/?refsrc=repo
-maintainer: Ayden Panhuyzen
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportDp
+depends: firmware (>= 11.0), mobilesubstrate (>= 0.9.5000)
+architecture: iphoneos-arm64
+replaces: com.ioscreatix.silo
+description: Support tweak for CC modules!
+sponsor: thebigboss.org <http://thebigboss.org>
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/ccsupport_1.3.10-2_iphoneos-arm64.deb
+name: CCSupport
+package: com.opa334.ccsupport
+provides: com.ioscreatix.silo
+maintainer: BigBoss <bigboss@thebigboss.org>
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportDp
+dev: opa334
+sha256: c5097a205e6cc8370dd69c245b918fd69e2022ddf6a29624b645aaf881b755dd
+conflicts: com.ioscreatix.silo
+installed-size: 453
+author: opa334 <opa334@protonmail.com>
+size: 55778
+version: 1.3.10-2
+md5sum: 4d7c268713deb29d0d8e23157d33bb2d
 
-size: 253166
-depends: mobilesubstrate, firmware (>= 11.0), preferenceloader, dev.ayden.ios.tweak.lib.libdundas
+name: AltList
+section: Development
+package: com.opa334.altlist
+depends: firmware (>= 7.0)
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
+description: A modern AppList alternative
+sha256: db882618f494fc4ab3bdea01321b56fb08d3fc3d5a395b4210d843a955e3a491
+md5sum: 359166b23822123a76c2b7dc3e4afea3
+maintainer: BigBoss <bigboss@thebigboss.org>
+dev: opa334
+version: 1.0.10
+installed-size: 256
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/altlist_1.0.10_iphoneos-arm64.deb
+author: opa334 <opa334@protonmail.com>
+size: 27784
+sponsor: thebigboss.org <http://thebigboss.org>
+architecture: iphoneos-arm64
+
 section: Tweaks
-description: The volume HUD you deserve. — Supports iOS 11.0 to 13.7. Ultrasound is now end-of-life and is unlikely to receive updates.
-icon: https://repo-archive-cdn.dynastic.co/08d5e7974fe22f09dae72199305a7f80.png_120.png
-sha1: 5106ed6c327e51155e67f1ed4ea47c474edafe2b
-author: Ayden Panhuyzen
-version: 1.2.14
-maintainer: Ayden Panhuyzen
-name: Ultrasound
-installed-size: 984
-depiction: https://repo.dynastic.co/depiction/88709621761441792/
-conflicts: com.ruler225.videohud, com.spark.melior, net.midkin.smartvolumecontrol2, es.ubikstyl.sonus12, me.nepeta.brokenhud, me.nepeta.flashyhud, hi.my.name.is.ubik.sonus13, com.ikilledappl3.switchhud, com.muirey03.13hud, com.kingpuffdaddi.ringer13
-package: applebetas.ios.tweak.willow
-md5sum: 05773a164a2c79f209e7bec9a4c39b48
-sileodepiction: https://repo.dynastic.co/sileo-depiction/88709621761441792/
-architecture: iphoneos-arm
-filename: https://repo.dynastic.co/deb/05773a164a2c79f209e7bec9a4c39b48.deb
-sha256: ff543d46cee0c5b143583c61fa3d3c9269e284ce2bdbd1f3957eea3912bd86ad
+author: opa334 <opa334@protonmail.com>
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=choicyDp
+name: Choicy
+package: com.opa334.choicy
+depends: firmware (>= 10.0), mobilesubstrate (>= 0.9.5000), preferenceloader, com.opa334.altlist (>= 1.0.4)
+description: Advanced Tweak Configuration!
+size: 104772
+installed-size: 813
+architecture: iphoneos-arm64
+icon: file:///Library/PreferenceBundles/ChoicyPrefs.bundle/ChoicyIcon@2x.png
+dev: opa334
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/choicy_1.4.10-2_iphoneos-arm64.deb
+sha256: d07ba4b4cae6db9c3a07db742dc80ffc2e54f98627112bb97a674e4188eca1cf
+md5sum: d2f8c5c9fa130a2cdc06c5451e9dc717
+sponsor: thebigboss.org <http://thebigboss.org>
+version: 1.4.10-2
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=choicyDp
+maintainer: BigBoss <bigboss@thebigboss.org>
 
-architecture: iphoneos-arm
-icon: https://repo-archive-cdn.dynastic.co/258aa692e4dfd6113bd118fc09faa1b8.png_120.png
-filename: https://repo.dynastic.co/deb/d509a22561ccf066eb57fccf38d48e5a.deb
-version: 1.0.1
-depiction: https://repo.dynastic.co/depiction/317987832943607808/
-sha256: fba2f688ed757e4e83f6637bd45567d7ee01ca5dc9cf56f1798a69dc30802b0b
-name: kindaStock
-author: Mirac
-depends: com.spark.snowboard | net.dodtweaks.ithemer | com.anemonetheming.anemone | com.artikus.neonboard | winterboard
-maintainer: Mirac <ozd.mirac@gmail.com>
-section: Themes
-sileodepiction: https://repo.dynastic.co/sileo-depiction/317987832943607808/
-sha1: b9ad8b332c69baaab359ecffc619a8115da57493
-size: 5367244
-description: A theme for iOS. Clean, familiar, yet new. — kindaStock improves on the stock iOS icons while staying true to the original. Every icon is carefully crafted with love and attention to detail to give your device a fresh new look while keeping
-md5sum: d509a22561ccf066eb57fccf38d48e5a
-package: com.mirac.kindastock
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=filzafilemanagerDp
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/filza_4.0.1-3_iphoneos-arm64.deb
+size: 10216820
+sponsor: thebigboss.org <http://thebigboss.org>
+priority: optional
+sha256: 918a39bd1cf0edefe1bb1a0fbb2253ad764a5633649a22c85ae3df7e33689586
+author: TIGI Software <satashi2009@gmail.com>
+section: Utilities
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=filzafilemanagerDp
+description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+
+architecture: iphoneos-arm64
+dev: satashi2009
+depends: firmware (>= 7.0), zip, unzip, gzip, unrar, p7zip
+md5sum: 4812dc73e2ed0a0281b18e876d96edf1
+conflicts: com.tigisoftware.filza64bit, com.tigisoftware.filza39
+version: 4.0.1-3
+package: com.tigisoftware.filza
+maintainer: BigBoss <bigboss@thebigboss.org>
+name: Filza File Manager
+icon: file:///Applications/Filza.app/AppIcon57x57.png
+installed-size: 31822
 
-size: 4004
-md5sum: 5d0b16c0b0507b68a7ffe60dc56804fd
-sha1: 858baad87fc3255a4133e0b101f00633b291db21
-depends: mobilesubstrate
-architecture: iphoneos-arm
+architecture: iphoneos-arm64
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+size: 17604
+name: PreferenceLoader
+depends: mobilesubstrate, firmware (>= 15.0)
+section: System
+description: load preferences in style
+package: preferenceloader
+md5sum: 7f8e8ed7a44c2c04c777ba823df0cc0e
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+dev: dhinakg
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/preferenceloader_2.2.6-1_iphoneos-arm64.deb
+installed-size: 353
+maintainer: BigBoss <bigboss@thebigboss.org>
+sha256: d5553f68d58fb5dd2ebda950f9b5e4d5119118cd5c8c49a08379521cc9636460
+author: Dhinak G <dhinak@dhinak.net>
+version: 2.2.6-1
+
+dev: opa334
+architecture: iphoneos-arm64
+md5sum: ff0055f43fa35cedb65a956e95a5fdf0
+description: Patchfinder and rebinder for objc_direct methods
+maintainer: BigBoss <bigboss@thebigboss.org>
+sha256: 1aed213fc9b2ba3a77492ae7b9e6884a2689783617c11941c60889db805647c9
+sponsor: thebigboss.org <http://thebigboss.org>
+section: Development
+name: libundirect
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libundirectDp
+version: 1.1.5
+size: 6646
+author: opa334 <opa334@protonmail.com>
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libundirectDp
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/libundirect_1.1.5_iphoneos-arm64.deb
+installed-size: 175
+package: com.opa334.libundirect
+
+maintainer: BigBoss <bigboss@thebigboss.org>
+md5sum: 1ae036d560b59bf69292c60fdaa3bbb1
+depends: firmware (>= 8.0), mobilesubstrate (>= 0.9.5000)
+sponsor: thebigboss.org <http://thebigboss.org>
+architecture: iphoneos-arm64
+sha256: c90e7819c2cbbfc44ae3cd8f4e136c1be5174c96910700d70d66cbc3f0c1af68
+conflicts: ws.hbang.stopcrashingpls (<= 1.0.2)
+section: System
+filename: http://apt.thebigboss.org/repofiles/cydia/debs2.0-rootless/libsandy_1.1.1_iphoneos-arm64.deb
+description: Securely extend the sandbox of system processes and user applications
+depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
+package: com.opa334.libsandy
+dev: opa334
+installed-size: 342
+size: 11982
+version: 1.1.1
+author: opa334 <opa334@protonmail.com>
+homepage: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
+name: libSandy
+
 maintainer: Jamie Bishop <jamie@dynastic.co>
-installed-size: 200
-description: An alternate system font for your iOS device. — The interface you know. The font you didn't know you needed.
 filename: https://repo.dynastic.co/deb/5d0b16c0b0507b68a7ffe60dc56804fd.deb
+sha1: 858baad87fc3255a4133e0b101f00633b291db21
+architecture: iphoneos-arm
+section: Tweaks
+version: 1.0.2
 sileodepiction: https://repo.dynastic.co/sileo-depiction/267378657834565632/
 icon: https://repo-archive-cdn.dynastic.co/b27ae14334c553ee8002785b8bb1236c.jpeg_120.jpeg
 package: co.dynastic.ios.tweak.compactor
-section: Tweaks
 name: Compactor
-sha256: 18e289f0e95f38e15bcd580529502c4d4b8064c45f33c333969cf03a0dac24b8
+description: An alternate system font for your iOS device. — The interface you know. The font you didn't know you needed.
+md5sum: 5d0b16c0b0507b68a7ffe60dc56804fd
+size: 4004
 depiction: https://repo.dynastic.co/depiction/267378657834565632/
-version: 1.0.2
 author: Jamie Bishop
+installed-size: 200
+sha256: 18e289f0e95f38e15bcd580529502c4d4b8064c45f33c333969cf03a0dac24b8
+depends: mobilesubstrate
 
-filename: https://repo.dynastic.co/deb/739f3faf6035be1de232833796947f5d.deb
-size: 40022
-description: Shared utilities for my tweaks.
 section: Development
-depiction: https://repo.dynastic.co/depiction/384973091832332288/
-installed-size: 332
-sileodepiction: https://repo.dynastic.co/sileo-depiction/384973091832332288/
-name: libdundas
-package: dev.ayden.ios.tweak.lib.libdundas
-md5sum: 739f3faf6035be1de232833796947f5d
+architecture: iphoneos-arm
+filename: https://repo.dynastic.co/deb/14572873fb3810a4d50b887415e0001d.deb
+size: 10514
+package: dev.ayden.ios.lib.sys.aurora
+sha256: d7fc42ef71e20a536a1e5aaab2518be994314a3530aaf4435421f87a543389ce
+sha1: 14c1b87c83095ec23c6f4d81a8bdda7e072e078f
+description: Specialized out-of-process weather utility library.
+maintainer: Ayden Panhuyzen
+installed-size: 144
+depiction: https://repo.dynastic.co/depiction/317551823277785088/
+sileodepiction: https://repo.dynastic.co/sileo-depiction/317551823277785088/
 version: 1.0.3
+md5sum: 14572873fb3810a4d50b887415e0001d
+depends: mobilesubstrate, firmware (>= 11.0)
+author: Ayden Panhuyzen
+name: libaurora
+
+installed-size: 332
 maintainer: Ayden Panhuyzen
 sha256: 13f6bbadc25e00384c0f825963aa3769812a9e8737f1609dc530267ac650dc8f
-architecture: iphoneos-arm
-sha1: c5be57aeeafc4408e2b54d548b1e59482707ac85
-depends: mobilesubstrate, firmware (>= 9.0)
+sileodepiction: https://repo.dynastic.co/sileo-depiction/384973091832332288/
 author: Ayden Panhuyzen
+filename: https://repo.dynastic.co/deb/739f3faf6035be1de232833796947f5d.deb
+description: Shared utilities for my tweaks.
+version: 1.0.3
+package: dev.ayden.ios.tweak.lib.libdundas
+depends: mobilesubstrate, firmware (>= 9.0)
+architecture: iphoneos-arm
+size: 40022
+depiction: https://repo.dynastic.co/depiction/384973091832332288/
+section: Development
+md5sum: 739f3faf6035be1de232833796947f5d
+sha1: c5be57aeeafc4408e2b54d548b1e59482707ac85
+name: libdundas
+
+author: Dynastic
+section: Development
+description: Shared utilities for Dynastic tweaks.
+sileodepiction: https://repo.dynastic.co/sileo-depiction/310248158422630400/
+depends: mobilesubstrate, preferenceloader, firmware (>= 11.0)
+sha1: 0ad2fcefd4405ce3d13aa709d7ccd59cf867ed13
+maintainer: Ayden Panhuyzen
+installed-size: 492
+package: co.dynastic.ios.lib.flora
+name: libflora
+version: 1.0.1
+size: 95608
+md5sum: e21e0ca1462f005e90de18a4be8c88c1
+sha256: 01565e05ee14b5a13f0b712c4ddfc9e8d13d8e224e202638dd4c535fc166f16b
+filename: https://repo.dynastic.co/deb/e21e0ca1462f005e90de18a4be8c88c1.deb
+architecture: iphoneos-arm
+depiction: https://repo.dynastic.co/depiction/310248158422630400/
+
+depends: mobilesubstrate, firmware (>= 11.0), preferenceloader, dev.ayden.ios.tweak.lib.libdundas
+version: 1.2.14
+depiction: https://repo.dynastic.co/depiction/88709621761441792/
+sha1: 5106ed6c327e51155e67f1ed4ea47c474edafe2b
+package: applebetas.ios.tweak.willow
+installed-size: 984
+sileodepiction: https://repo.dynastic.co/sileo-depiction/88709621761441792/
+author: Ayden Panhuyzen
+size: 253166
+sha256: ff543d46cee0c5b143583c61fa3d3c9269e284ce2bdbd1f3957eea3912bd86ad
+description: The volume HUD you deserve. — Supports iOS 11.0 to 13.7. Ultrasound is now end-of-life and is unlikely to receive updates.
+maintainer: Ayden Panhuyzen
+filename: https://repo.dynastic.co/deb/05773a164a2c79f209e7bec9a4c39b48.deb
+md5sum: 05773a164a2c79f209e7bec9a4c39b48
+conflicts: com.ruler225.videohud, com.spark.melior, net.midkin.smartvolumecontrol2, es.ubikstyl.sonus12, me.nepeta.brokenhud, me.nepeta.flashyhud, hi.my.name.is.ubik.sonus13, com.ikilledappl3.switchhud, com.muirey03.13hud, com.kingpuffdaddi.ringer13
+name: Ultrasound
+architecture: iphoneos-arm
+icon: https://repo-archive-cdn.dynastic.co/08d5e7974fe22f09dae72199305a7f80.png_120.png
+section: Tweaks
+
+size: 5367244
+maintainer: Mirac <ozd.mirac@gmail.com>
+depends: com.spark.snowboard | net.dodtweaks.ithemer | com.anemonetheming.anemone | com.artikus.neonboard | winterboard
+description: A theme for iOS. Clean, familiar, yet new. — kindaStock improves on the stock iOS icons while staying true to the original. Every icon is carefully crafted with love and attention to detail to give your device a fresh new look while keeping
+icon: https://repo-archive-cdn.dynastic.co/258aa692e4dfd6113bd118fc09faa1b8.png_120.png
+package: com.mirac.kindastock
+version: 1.0.1
+sileodepiction: https://repo.dynastic.co/sileo-depiction/317987832943607808/
+sha1: b9ad8b332c69baaab359ecffc619a8115da57493
+name: kindaStock
+filename: https://repo.dynastic.co/deb/d509a22561ccf066eb57fccf38d48e5a.deb
+depiction: https://repo.dynastic.co/depiction/317987832943607808/
+architecture: iphoneos-arm
+author: Mirac
+sha256: fba2f688ed757e4e83f6637bd45567d7ee01ca5dc9cf56f1798a69dc30802b0b
+section: Themes
+md5sum: d509a22561ccf066eb57fccf38d48e5a
+
+depends: mobilesubstrate, firmware (>= 11.0), co.dynastic.ios.lib.flora
+size: 1294668
+architecture: iphoneos-arm
+version: 1.0.23
+homepage: https://www.dynastic.co/shortlook/?refsrc=repo
+filename: https://repo.dynastic.co/deb/e0385d50470f0aabb6198e16da2f8b4b.deb
+sileodepiction: https://repo.dynastic.co/sileo-depiction/68292503631036416/
+name: ShortLook
+icon: https://repo-archive-cdn.dynastic.co/fd376d379e919872d48638d894fb9351.png_166.png
+package: co.dynastic.ios.tweak.shortlook
+section: Tweaks
+maintainer: Ayden Panhuyzen
+author: Dynastic
+installed-size: 2128
+description: Your notifications. At a glance. — Supports iOS 11 to 14.
+depiction: https://repo.dynastic.co/depiction/68292503631036416/
+md5sum: e0385d50470f0aabb6198e16da2f8b4b
+sha1: 576514c2bc46176e61f80e7e9d054b584da6b2a6
+sha256: a8ff2a582ebe1d6e2f5f3b89e101abad938769da32aeceb973fd5ef11e6441ff
+
+author: Lane Landas
+filename: https://repo.dynastic.co/deb/54fbb8f191630b527289cd30d1b55bed.deb
+sileodepiction: https://repo.dynastic.co/sileo-depiction/332746325466546176/
+depiction: https://repo.dynastic.co/depiction/332746325466546176/
+size: 29497192
+depends: com.anemonetheming.anemone | com.spark.snowboard
+name: Chroma
+sha1: cb395a5d7c32ecb9226383c7864c8668d4c86700
+section: Themes
+icon: https://repo-archive-cdn.dynastic.co/ae41f4f24a045ac2c069e0dd8008b01f.png_120.png
+version: 1.2.2.5
+description: A vivid, gradient theme with a familiar feel. — About:
+package: com.nwlandas.chroma
+maintainer: nwlandas
+sha256: f54874a50e0a92ee02b45eaddb6cf22a5ae4e8c9e12a45c8f0eebe8004c198b2
+architecture: iphoneos-arm
+md5sum: 54fbb8f191630b527289cd30d1b55bed
 
