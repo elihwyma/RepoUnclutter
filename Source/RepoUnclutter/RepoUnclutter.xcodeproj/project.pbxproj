@@ -13,10 +13,12 @@
 		E1C4995326D02A6D0093E290 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4995226D02A6D0093E290 /* Repo.swift */; };
 		E1C4995526D0356A0093E290 /* BZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4995426D0356A0093E290 /* BZIP.swift */; };
 		E1C4995F26D0374A0093E290 /* PackageListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4995E26D0374A0093E290 /* PackageListManager.swift */; };
-		E1C4996126D037D80093E290 /* DpkgWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4996026D037D80093E290 /* DpkgWrapper.swift */; };
 		E1C4996326D038100093E290 /* ControlFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4996226D038100093E290 /* ControlFileParser.swift */; };
 		E1C4996626D038490093E290 /* ControlFileParserFast.c in Sources */ = {isa = PBXBuildFile; fileRef = E1C4996426D038490093E290 /* ControlFileParserFast.c */; };
 		E1C4996726D038490093E290 /* ControlFileParserFast.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C4996526D038490093E290 /* ControlFileParserFast.h */; };
+		E1F955E92AC096C9009C50D7 /* dpkgversion.c in Sources */ = {isa = PBXBuildFile; fileRef = E1F955E72AC096C9009C50D7 /* dpkgversion.c */; };
+		E1F955EA2AC096C9009C50D7 /* dpkgversion.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F955E82AC096C9009C50D7 /* dpkgversion.h */; };
+		E1F955EE2AC096FF009C50D7 /* DpkgWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F955ED2AC096FF009C50D7 /* DpkgWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,10 +44,13 @@
 		E1C4995726D035770093E290 /* libbz2.1.0.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.5.tbd; path = usr/lib/libbz2.1.0.5.tbd; sourceTree = SDKROOT; };
 		E1C4995D26D036F10093E290 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		E1C4995E26D0374A0093E290 /* PackageListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageListManager.swift; sourceTree = "<group>"; };
-		E1C4996026D037D80093E290 /* DpkgWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DpkgWrapper.swift; sourceTree = "<group>"; };
 		E1C4996226D038100093E290 /* ControlFileParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlFileParser.swift; sourceTree = "<group>"; };
 		E1C4996426D038490093E290 /* ControlFileParserFast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ControlFileParserFast.c; sourceTree = "<group>"; };
 		E1C4996526D038490093E290 /* ControlFileParserFast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlFileParserFast.h; sourceTree = "<group>"; };
+		E1F955E72AC096C9009C50D7 /* dpkgversion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dpkgversion.c; sourceTree = "<group>"; };
+		E1F955E82AC096C9009C50D7 /* dpkgversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dpkgversion.h; sourceTree = "<group>"; };
+		E1F955ED2AC096FF009C50D7 /* DpkgWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DpkgWrapper.swift; sourceTree = "<group>"; };
+		E1F955EF2AC09814009C50D7 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +101,9 @@
 				E1C4996226D038100093E290 /* ControlFileParser.swift */,
 				E1C4996426D038490093E290 /* ControlFileParserFast.c */,
 				E1C4996526D038490093E290 /* ControlFileParserFast.h */,
-				E1C4996026D037D80093E290 /* DpkgWrapper.swift */,
+				E1F955E72AC096C9009C50D7 /* dpkgversion.c */,
+				E1F955ED2AC096FF009C50D7 /* DpkgWrapper.swift */,
+				E1F955E82AC096C9009C50D7 /* dpkgversion.h */,
 				E1C4995E26D0374A0093E290 /* PackageListManager.swift */,
 			);
 			path = "Sileo Backend";
@@ -105,6 +112,7 @@
 		E1C4995626D035770093E290 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1F955EF2AC09814009C50D7 /* libc.tbd */,
 				E125D5D026D040120021DE2E /* libbz2.1.0.tbd */,
 				E125D5CE26D03FFC0021DE2E /* libbz2.tbd */,
 				E1C4995726D035770093E290 /* libbz2.1.0.5.tbd */,
@@ -120,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C4996726D038490093E290 /* ControlFileParserFast.h in Headers */,
+				E1F955EA2AC096C9009C50D7 /* dpkgversion.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,9 +195,10 @@
 				E1C4995126D02A650093E290 /* Package.swift in Sources */,
 				E1C4995526D0356A0093E290 /* BZIP.swift in Sources */,
 				E1C4996626D038490093E290 /* ControlFileParserFast.c in Sources */,
-				E1C4996126D037D80093E290 /* DpkgWrapper.swift in Sources */,
 				E1C4994926D02A220093E290 /* main.swift in Sources */,
+				E1F955EE2AC096FF009C50D7 /* DpkgWrapper.swift in Sources */,
 				E1C4995F26D0374A0093E290 /* PackageListManager.swift in Sources */,
+				E1F955E92AC096C9009C50D7 /* dpkgversion.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,127 +208,23 @@
 		E1C4994A26D02A220093E290 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		E1C4994B26D02A220093E290 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
 		E1C4994D26D02A220093E290 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = x86_64;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7J8FJX4SRX;
-				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "RepoUnclutter/SileoBackend/**";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = RepoUnclutter/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
@@ -328,13 +234,11 @@
 		E1C4994E26D02A220093E290 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = x86_64;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7J8FJX4SRX;
-				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "RepoUnclutter/SileoBackend/**";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				ONLY_ACTIVE_ARCH = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = RepoUnclutter/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;

@@ -11,5 +11,6 @@
 #import <bzlib.h>
 #import <stdint.h>
 #import "ControlFileParserFast.h"
+#import "dpkgversion.h"
 
 #endif /* BridgingHeader_h */
