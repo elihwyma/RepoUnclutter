@@ -65,13 +65,13 @@ for arch in ["iphoneos-arm", "iphoneos-arm64"] {
         
         let packagesDict = PackageListManager.readPackages(rawPackagesData: packagesData)
         for package in packagesDict.values where allowedTweaks.contains(package.packageID) {
-            for version in package.allVersions {
+            for _ in package.allVersions {
                 guard let filename = package.filename else { continue }
-                var string = ""
+                var string = "package: \(package.package)\n"
                 for (key, value) in package.rawControl {
                     if key == "filename" {
                         string += "filename: \(repoUrl.appendingPathComponent(filename))\n"
-                    } else if key == "tag" {
+                    } else if key == "tag" || key == "package" {
                         continue
                     } else {
                         string += "\(key): \(value)\n"
